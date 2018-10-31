@@ -40,6 +40,8 @@
         }
     },
     "scripts": {
+        "fixer": "php-cs-fixer fix",
+        "fixer-d-d": "php-cs-fixer fix --dry-run --diff",
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
